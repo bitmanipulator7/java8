@@ -16,5 +16,8 @@ public class DateTimePractice01 {
         LocalDateTime todayIndiaDateTime = LocalDateTime.now(ZoneId.of("Asia/Kolkata"));
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MMM dd, yyyy HH:mm:ss");
         System.out.println("Current date time in India: " + dtf.format(todayIndiaDateTime));
+
+        LocalDate dateFromEpoch = LocalDate.ofEpochDay(100);
+        System.out.println("100 days from the Epoch Start Date: " + dateFromEpoch);
     }
 }

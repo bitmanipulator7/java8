@@ -19,5 +19,8 @@ public class DateTimePractice01 {
 
         LocalDate dateFromEpoch = LocalDate.ofEpochDay(100);
         System.out.println("100 days from the Epoch Start Date: " + dateFromEpoch);
+
+        LocalDate hundredthDayOf2024 = LocalDate.ofYearDay(2024, 100);
+        System.out.println("100th day of 2024: " + hundredthDayOf2024);
     }
 }

@@ -1,7 +1,4 @@
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.Month;
-import java.time.ZoneId;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 
 public class DateTimePractice01 {
@@ -22,5 +19,8 @@ public class DateTimePractice01 {
 
         LocalDate hundredthDayOf2024 = LocalDate.ofYearDay(2024, 100);
         System.out.println("100th day of 2024: " + hundredthDayOf2024);
+
+        LocalTime time = LocalTime.now();
+        System.out.println("Current time: " + time);
     }
 }

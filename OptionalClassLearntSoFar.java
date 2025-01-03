@@ -10,6 +10,8 @@ public class OptionalClassLearntSoFar {
 
         Optional<String> checkNullAgain = Optional.ofNullable(str[9]);
         checkNullAgain.ifPresent(n -> System.out.println(n));
+        String defaultName = checkNullAgain.orElse("Ninth element");
+        System.out.println(defaultName);
     }
 
 }

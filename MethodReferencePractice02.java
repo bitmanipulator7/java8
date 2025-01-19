@@ -7,6 +7,9 @@ public class MethodReferencePractice02 {
         Sayable2 sayable2 = new MethodReferencePractice02()::doSomething;
         // referring non-static method using anonymous object
         sayable2.say();
+
+        Sayable2 sayable3 = sayable2;
+        sayable3.say();
     }
 
     public void doSomething() {
@@ -15,5 +18,9 @@ public class MethodReferencePractice02 {
 }
 
 interface Sayable2 {
+    void say();
+}
+
+interface Sayable3 {
     void say();
 }

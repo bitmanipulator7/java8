@@ -4,7 +4,7 @@ import java.util.function.BiFunction;
 public class MethodReference04 {
     public static void main(String[] args) {
         BiFunction<Integer, Integer, Integer> adder = Arithmetic::add;
-        int result = adder.apply(5, 5);
+        int result = adder.apply(5, 10);
         System.out.println(result);
     }
 }
